@@ -102,3 +102,51 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# RTR MACBOOK PRO
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
+export VAULT_ADDR=https://vault-management.rtr.cloud
+#export DOCKER_HOST=unix://${HOME}/.colima/default/docker.sock#
+export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+# normally would be $(colima ls -j | jq -r '.address'), but that doesn't seem to work with the Cisco VPN
+export TESTCONTAINERS_HOST_OVERRIDE=localhost
+export TESTCONTAINERS_HUB_IMAGE_NAME_PREFIX=artifactory.rtr.cloud/docker/
+
+launchctl setenv DOCKER_HOST $DOCKER_HOST
+launchctl setenv TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE $TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE
+launchctl setenv TESTCONTAINERS_HOST_OVERRIDE $TESTCONTAINERS_HOST_OVERRIDE
+launchctl setenv TESTCONTAINERS_HUB_IMAGE_NAME_PREFIX $TESTCONTAINERS_HUB_IMAGE_NAME_PREFIX
+
+# DZ - Dealing with Rosetta Needs for RTR Repos
+if [[ "$(uname -m)" == "x86_64" ]]; then
+    # Intel (Rosetta) configuration
+    echo "Rosetta Terminal"
+    source ~/.zshrc_rosetta
+else
+    # Native Apple Silicon configuration
+    echo "Apple Silicon Terminal"
+    source ~/.zshrc_apple_silicon
+fi
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+# Added by Antigravity
+export PATH="/Users/dz/.antigravity/antigravity/bin:$PATH"
+#export GEMINI_API_KEY="AIzaSyAbprePnE7WAWpuMUxMbN43topMEE7hFW4"
+export GOOGLE_CLOUD_PROJECT=rtr-gemini-mgmt
+
+. "$HOME/.local/bin/env"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/dz/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dz/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/dz/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dz/google-cloud-sdk/completion.zsh.inc'; fi
+
+export EDITOR=nvim
+
+
