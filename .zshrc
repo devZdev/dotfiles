@@ -125,3 +125,8 @@ if [ -f ~/.extra.zsh ]; then
     source ~/.extra.zsh
 fi
 
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/devzdev/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions

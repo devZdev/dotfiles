@@ -1,0 +1,73 @@
+# Machine Setup Documentation
+
+**Phase 1: macOS System Preferences**
+1. Log into your Apple ID and configure iCloud.
+2. Remove any unnecessary files or default bloatware.
+3. Open System Settings and adjust the Trackpad speed.
+4. Enable "Tap to click" in the Trackpad settings.
+5. Download and install iTerm2 (if not already installed).
+
+**Phase 2: Core Package Management & Fonts**
+1. Install Homebrew:
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+2. Install the Inconsolata Go Nerd Font:
+`brew install --cask font-inconsolata-go-nerd-font`
+3. Open iTerm2 Settings, navigate to Profiles > Text, and set the font to InconsolataGo Nerd Font.
+
+**Phase 3: Zsh & Terminal Environment**
+1. Install Oh My Zsh:
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+2. Install Starship prompt:
+`brew install starship`
+3. Clone Zsh plugins into the Oh My Zsh custom plugins directory:
+`git clone git@github.com:zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/zsh-autosuggestions`
+`git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting`
+
+**Phase 4: SSH & GitHub Authentication**
+1. Generate a new SSH key:
+`ssh-keygen -t ed25519 -C "devin.zimmer@gmail.com"`
+2. Start the SSH agent in the background:
+`eval "$(ssh-agent -s)"`
+3. Create and edit your SSH config file (`vim ~/.ssh/config`) to include:
+```text
+Host github.com
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+```
+4. Add your SSH private key to the ssh-agent:
+`ssh-add --apple-use-keychain ~/.ssh/id_ed25519`
+5. Copy the public key to your clipboard and add it to your GitHub account settings:
+`pbcopy < ~/.ssh/id_ed25519.pub`
+
+**Phase 5: Git Configuration & Dotfiles**
+1. Set your global Git variables and aliases:
+`git config --global user.name "Devin Zimmer"`
+`git config --global user.email devin.zimmer@gmail.com`
+`git config --global alias.co checkout`
+`git config --global alias.br branch`
+`git config --global alias.ci commit`
+`git config --global alias.st status`
+2. Clone your repositories into a working directory (e.g., `~/git`):
+`git clone git@github.com:devZdev/dotfiles ~/git/dotfiles`
+`git clone git@github.com:devZdev/kickstart.nvim.git ~/git/kickstart.nvim`
+3. Symlink your dotfiles to your home directory:
+`ln -s ~/git/dotfiles/.zshrc ~/.zshrc`
+`ln -s ~/git/dotfiles/.extra.zsh ~/.extra.zsh`
+
+**Phase 6: Development Tooling**
+1. Install Neovim via Homebrew:
+`brew install neovim`
+2. Symlink the Neovim configuration:
+`ln -s ~/git/kickstart.nvim ~/.config/nvim`
+3. Install NVM (Node Version Manager):
+`brew update && brew install nvm`
+4. Add NVM configuration to your `.zshrc` (if not already handled by your dotfiles repo).
+5. Install the LTS version of Node.js:
+`nvm install --lts`
+6. Install required global NPM packages (Language servers and Gemini):
+`npm install -g vscode-langservers-extracted @google/gemini-cli`
+7. Install Docker Desktop and log in (Username: `devzdev`):
+`brew install --cask docker-desktop`
+8. Install Google Cloud CLI, log in (`devin.zimmer@gmail.com`), and set the active project:
+`brew install --cask gcloud-cli`
+`gcloud config set project air-scraper-0317`
