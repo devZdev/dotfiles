@@ -112,6 +112,9 @@ source $ZSH/oh-my-zsh.sh
 # The next line enables shell command completion for gcloud.
 #if [ -f '/Users/dz/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dz/google-cloud-sdk/completion.zsh.inc'; fi
 
+export DOCKER_HOST="unix://${HOME}/.docker/run/docker.sock"
+launchctl setenv DOCKER_HOST $DOCKER_HOST
+
 # NODE
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh" # This loads nvm
