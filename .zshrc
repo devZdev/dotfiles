@@ -103,30 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# RTR MACBOOK PRO
-#export PATH="/opt/homebrew/bin:$PATH"
-#export PATH="/opt/homebrew/sbin:$PATH"
-#export VAULT_ADDR=https://vault-management.rtr.cloud
-#export DOCKER_HOST=unix://${HOME}/.colima/default/docker.sock#
-#export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
-#export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
-# normally would be $(colima ls -j | jq -r '.address'), but that doesn't seem to work with the Cisco VPN
-#export TESTCONTAINERS_HOST_OVERRIDE=localhost
-#export TESTCONTAINERS_HUB_IMAGE_NAME_PREFIX=artifactory.rtr.cloud/docker/
-
-#launchctl setenv DOCKER_HOST $DOCKER_HOST
-#launchctl setenv TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE $TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE
-#launchctl setenv TESTCONTAINERS_HOST_OVERRIDE $TESTCONTAINERS_HOST_OVERRIDE
-#launchctl setenv TESTCONTAINERS_HUB_IMAGE_NAME_PREFIX $TESTCONTAINERS_HUB_IMAGE_NAME_PREFIX
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-# Added by Antigravity
-#export PATH="/Users/dz/.antigravity/antigravity/bin:$PATH"
-#export GEMINI_API_KEY=""
-#export GOOGLE_CLOUD_PROJECT=rtr-gemini-mgmt
 
 # The next line updates PATH for the Google Cloud SDK.
 #if [ -f '/Users/dz/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dz/google-cloud-sdk/path.zsh.inc'; fi
@@ -141,4 +119,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # STARSHIP
 eval "$(starship init zsh)"
+
+# Additional zshrc (to be gitignored)
+if [ -f ~/.extra.zsh ]; then
+    source ~/.extra.zsh
+fi
 
