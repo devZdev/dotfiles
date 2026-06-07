@@ -5,14 +5,12 @@
 2. Remove any unnecessary files or default bloatware.
 3. Open System Settings and adjust the Trackpad speed.
 4. Enable "Tap to click" in the Trackpad settings.
-5. Download and install iTerm2 (if not already installed).
 
 **Phase 2: Core Package Management & Fonts**
 1. Install Homebrew:
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 2. Install the Inconsolata Go Nerd Font:
 `brew install --cask font-inconsolata-go-nerd-font`
-3. Open iTerm2 Settings, navigate to Profiles > Text, and set the font to InconsolataGo Nerd Font.
 
 **Phase 3: Zsh & Terminal Environment**
 1. Install Oh My Zsh:
@@ -71,3 +69,10 @@ Host github.com
 8. Install Google Cloud CLI, log in (`devin.zimmer@gmail.com`), and set the active project:
 `brew install --cask gcloud-cli`
 `gcloud config set project air-scraper-0317`
+9. Install Google Chrome for development:
+`brew install --cask google-chrome`
+10. Install iTerm2 via Homebrew Cask:
+`brew install --cask iterm2`
+11. Configure iTerm2 to load preferences from your cloned dotfiles:
+`defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/git/dotfiles/iterm2"`
+`defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true`

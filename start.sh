@@ -20,6 +20,8 @@ brew install starship
 brew install neovim
 brew install nvm
 brew install --cask docker-desktop
+brew install --cask google-chrome
+brew install --cask iterm2
 brew install --cask gcloud-cli
 
 # 3. Setup Oh My Zsh & Plugins
@@ -81,6 +83,11 @@ if [ ! -d "$HOME/git/kickstart.nvim" ]; then
     ln -sf ~/git/kickstart.nvim ~/.config/nvim
 fi
 
+# Configure iTerm2 custom preferences folder
+echo "Configuring iTerm2 preferences..."
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/git/dotfiles/iterm2"
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+
 # 7. Node Environment & Global Packages
 echo "Configuring NVM and Node..."
 export NVM_DIR="$HOME/.nvm"
@@ -98,7 +105,7 @@ echo "===================================================================="
 echo "SETUP COMPLETE."
 echo "Manual steps remaining:"
 echo "1. Set up iCloud and adjust trackpad settings in System Preferences."
-echo "2. Configure iTerm2 to use the Inconsolata Go Nerd Font."
+echo "2. Restart iTerm2 to apply imported preferences and verify font configurations."
 echo "3. Log into Docker Desktop as 'devzdev'."
 echo "4. Authenticate gcloud (run: gcloud auth login)."
 echo "5. Add your Gemini API key to your .extra.zsh or .zshrc."
