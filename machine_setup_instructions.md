@@ -62,8 +62,8 @@ Host github.com
 4. Add NVM configuration to your `.zshrc` (if not already handled by your dotfiles repo).
 5. Install the LTS version of Node.js:
 `nvm install --lts`
-6. Install required global NPM packages (Language servers and Gemini):
-`npm install -g vscode-langservers-extracted @google/gemini-cli`
+6. Install required global NPM packages (Language servers, Gemini, and OpenAI Codex):
+`npm install -g vscode-langservers-extracted @google/gemini-cli @openai/codex`
 7. Install Docker Desktop and log in (Username: `devzdev`):
 `brew install --cask docker-desktop`
 8. Install Google Cloud CLI, log in (`devin.zimmer@gmail.com`), and set the active project:
@@ -76,3 +76,9 @@ Host github.com
 11. Configure iTerm2 to load preferences from your cloned dotfiles:
 `defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/git/dotfiles/iterm2"`
 `defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true`
+12. Install Zoom for collaboration:
+`brew install --cask zoom`
+13. Install Slack for communication:
+`brew install --cask slack`
+14. Install Claude Code CLI for AI-assisted terminal software engineering:
+`brew install --cask claude-code`

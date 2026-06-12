@@ -22,7 +22,10 @@ brew install nvm
 brew install --cask docker-desktop
 brew install --cask google-chrome
 brew install --cask iterm2
+brew install --cask zoom
+brew install --cask slack
 brew install --cask gcloud-cli
+brew install --cask claude-code
 
 # 3. Setup Oh My Zsh & Plugins
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -95,7 +98,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 
 echo "Installing global NPM packages..."
-npm install -g vscode-langservers-extracted @google/gemini-cli
+npm install -g vscode-langservers-extracted @google/gemini-cli @openai/codex
 
 # 8. GCloud Configuration
 echo "Configuring GCloud Project..."
@@ -109,5 +112,7 @@ echo "2. Restart iTerm2 to apply imported preferences and verify font configurat
 echo "3. Log into Docker Desktop as 'devzdev'."
 echo "4. Authenticate gcloud (run: gcloud auth login)."
 echo "5. Add your Gemini API key to your .extra.zsh or .zshrc."
+echo "6. Set up your OpenAI / Codex authentication (run: codex to sign in)."
+echo "7. Set up your Claude Code authentication (run: claude to sign in)."
 echo "===================================================================="
 
