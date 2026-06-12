@@ -53,8 +53,8 @@ Host github.com
 `ln -s ~/git/dotfiles/.extra.zsh ~/.extra.zsh`
 
 **Phase 6: Development Tooling**
-1. Install Neovim via Homebrew:
-`brew install neovim`
+1. Install Neovim, ripgrep, fd, tree-sitter, and tree-sitter-cli via Homebrew:
+`brew install neovim ripgrep fd tree-sitter tree-sitter-cli`
 2. Symlink the Neovim configuration:
 `ln -s ~/git/kickstart.nvim ~/.config/nvim`
 3. Install NVM (Node Version Manager):

@@ -18,6 +18,10 @@ echo "Installing terminal utilities, fonts, and core applications..."
 brew install --cask font-inconsolata-go-nerd-font
 brew install starship
 brew install neovim
+brew install ripgrep
+brew install fd
+brew install tree-sitter
+brew install tree-sitter-cli
 brew install nvm
 brew install --cask docker-desktop
 brew install --cask google-chrome
