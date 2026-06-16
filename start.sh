@@ -20,6 +20,7 @@ brew install starship
 brew install neovim
 brew install ripgrep
 brew install fd
+brew install glow
 brew install tree-sitter
 brew install tree-sitter-cli
 brew install nvm
@@ -119,4 +120,3 @@ echo "5. Add your Gemini API key to your .extra.zsh or .zshrc."
 echo "6. Set up your OpenAI / Codex authentication (run: codex to sign in)."
 echo "7. Set up your Claude Code authentication (run: claude to sign in)."
 echo "===================================================================="
-
