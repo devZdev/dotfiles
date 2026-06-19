@@ -31,6 +31,7 @@ brew install --cask zoom
 brew install --cask slack
 brew install --cask gcloud-cli
 brew install --cask claude-code
+brew install --cask cursor-cli
 
 # 3. Setup Oh My Zsh & Plugins
 if [ ! -d "$HOME/.oh-my-zsh" ]; then

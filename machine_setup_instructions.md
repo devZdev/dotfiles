@@ -82,3 +82,5 @@ Host github.com
 `brew install --cask slack`
 14. Install Claude Code CLI for AI-assisted terminal software engineering:
 `brew install --cask claude-code`
+15. Install Cursor CLI for AI-assisted editor workflows:
+`brew install --cask cursor-cli`
