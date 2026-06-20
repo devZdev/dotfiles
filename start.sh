@@ -32,6 +32,7 @@ brew install --cask slack
 brew install --cask gcloud-cli
 brew install --cask claude-code
 brew install --cask cursor-cli
+brew install --cask grok-build
 
 # 3. Setup Oh My Zsh & Plugins
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -120,4 +121,5 @@ echo "4. Authenticate gcloud (run: gcloud auth login)."
 echo "5. Add your Gemini API key to your .extra.zsh or .zshrc."
 echo "6. Set up your OpenAI / Codex authentication (run: codex to sign in)."
 echo "7. Set up your Claude Code authentication (run: claude to sign in)."
+echo "8. Set up your Grok Build authentication (run: grok-build auth login)."
 echo "===================================================================="

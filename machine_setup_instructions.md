@@ -84,3 +84,5 @@ Host github.com
 `brew install --cask claude-code`
 15. Install Cursor CLI for AI-assisted editor workflows:
 `brew install --cask cursor-cli`
+16. Install Grok Build CLI for AI-assisted software engineering:
+`brew install --cask grok-build`
