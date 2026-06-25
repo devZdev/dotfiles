@@ -24,15 +24,18 @@ brew install glow
 brew install tree-sitter
 brew install tree-sitter-cli
 brew install nvm
+brew install gemini-cli
 brew install --cask docker-desktop
 brew install --cask google-chrome
 brew install --cask iterm2
 brew install --cask zoom
 brew install --cask slack
+brew install --cask protonvpn
 brew install --cask gcloud-cli
 brew install --cask claude-code
 brew install --cask cursor-cli
 brew install --cask grok-build
+brew install --cask antigravity-cli
 
 # 3. Setup Oh My Zsh & Plugins
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -105,7 +108,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 
 echo "Installing global NPM packages..."
-npm install -g vscode-langservers-extracted @google/gemini-cli @openai/codex
+npm install -g vscode-langservers-extracted @openai/codex
 
 # 8. GCloud Configuration
 echo "Configuring GCloud Project..."
@@ -122,4 +125,5 @@ echo "5. Add your Gemini API key to your .extra.zsh or .zshrc."
 echo "6. Set up your OpenAI / Codex authentication (run: codex to sign in)."
 echo "7. Set up your Claude Code authentication (run: claude to sign in)."
 echo "8. Set up your Grok Build authentication (run: grok-build auth login)."
+echo "9. Set up your Antigravity CLI authentication (run: agy to sign in)."
 echo "===================================================================="

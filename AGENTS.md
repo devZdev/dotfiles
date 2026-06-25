@@ -35,10 +35,11 @@ The repository relies on two key components to configure and maintain our develo
 
 ### 5. AI Engineering Tools
 Our setup integrates leading terminal-based AI tools:
-* **Gemini CLI** (`@google/gemini-cli`): Our primary AI terminal agent.
+* **Gemini CLI** (`gemini-cli`): Our primary AI terminal agent.
 * **OpenAI Codex CLI** (`@openai/codex`): For AI-assisted terminal coding and ChatGPT integration.
 * **Claude Code CLI** (`claude-code`): Anthropic's terminal-based AI software engineering agent.
 * **Grok Build CLI** (`grok-build`): xAI's agentic terminal-based coding assistant.
+* **Antigravity CLI** (`antigravity-cli`): Google's AI-first development terminal platform and agent (`agy`).
 
 ---
 
@@ -65,6 +66,7 @@ On a brand-new macOS machine:
      * Log into Codex by running `codex` to complete OpenAI authentication.
      * Log into Claude Code by running `claude` to complete Anthropic authentication.
      * Log into Grok Build by running `grok-build auth login` to complete xAI authentication.
+     * Log into Antigravity by running `agy` to complete Google authentication.
 
 ---
 
