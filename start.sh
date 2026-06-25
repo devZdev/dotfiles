@@ -24,7 +24,6 @@ brew install glow
 brew install tree-sitter
 brew install tree-sitter-cli
 brew install nvm
-brew install gemini-cli
 brew install --cask docker-desktop
 brew install --cask google-chrome
 brew install --cask iterm2
@@ -121,9 +120,8 @@ echo "1. Set up iCloud and adjust trackpad settings in System Preferences."
 echo "2. Restart iTerm2 to apply imported preferences and verify font configurations."
 echo "3. Log into Docker Desktop as 'devzdev'."
 echo "4. Authenticate gcloud (run: gcloud auth login)."
-echo "5. Add your Gemini API key to your .extra.zsh or .zshrc."
-echo "6. Set up your OpenAI / Codex authentication (run: codex to sign in)."
-echo "7. Set up your Claude Code authentication (run: claude to sign in)."
-echo "8. Set up your Grok Build authentication (run: grok-build auth login)."
-echo "9. Set up your Antigravity CLI authentication (run: agy to sign in)."
+echo "5. Set up your OpenAI / Codex authentication (run: codex to sign in)."
+echo "6. Set up your Claude Code authentication (run: claude to sign in)."
+echo "7. Set up your Grok Build authentication (run: grok-build auth login)."
+echo "8. Set up your Antigravity CLI authentication (run: agy to sign in)."
 echo "===================================================================="

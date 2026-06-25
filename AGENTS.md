@@ -35,7 +35,6 @@ The repository relies on two key components to configure and maintain our develo
 
 ### 5. AI Engineering Tools
 Our setup integrates leading terminal-based AI tools:
-* **Gemini CLI** (`gemini-cli`): Our primary AI terminal agent.
 * **OpenAI Codex CLI** (`@openai/codex`): For AI-assisted terminal coding and ChatGPT integration.
 * **Claude Code CLI** (`claude-code`): Anthropic's terminal-based AI software engineering agent.
 * **Grok Build CLI** (`grok-build`): xAI's agentic terminal-based coding assistant.
@@ -62,7 +61,6 @@ On a brand-new macOS machine:
    * **iTerm2**: Relaunch iTerm2 to load preferences from the repo.
    * **Docker / GCloud**: Log into Docker Desktop and run `gcloud auth login`.
    * **AI Tooling Keys**:
-     * Add your Gemini API key to your `.extra.zsh` or `.zshrc`.
      * Log into Codex by running `codex` to complete OpenAI authentication.
      * Log into Claude Code by running `claude` to complete Anthropic authentication.
      * Log into Grok Build by running `grok-build auth login` to complete xAI authentication.

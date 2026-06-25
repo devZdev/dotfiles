@@ -64,31 +64,29 @@ Host github.com
 `nvm install --lts`
 6. Install required global NPM packages (Language servers and OpenAI Codex):
 `npm install -g vscode-langservers-extracted @openai/codex`
-7. Install Gemini CLI via Homebrew:
-`brew install gemini-cli`
-8. Install Docker Desktop and log in (Username: `devzdev`):
+7. Install Docker Desktop and log in (Username: `devzdev`):
 `brew install --cask docker-desktop`
-9. Install Google Cloud CLI, log in (`devin.zimmer@gmail.com`), and set the active project:
+8. Install Google Cloud CLI, log in (`devin.zimmer@gmail.com`), and set the active project:
 `brew install --cask gcloud-cli`
 `gcloud config set project air-scraper-0317`
-10. Install Google Chrome for development:
+9. Install Google Chrome for development:
 `brew install --cask google-chrome`
-11. Install iTerm2 via Homebrew Cask:
+10. Install iTerm2 via Homebrew Cask:
 `brew install --cask iterm2`
-12. Configure iTerm2 to load preferences from your cloned dotfiles:
+11. Configure iTerm2 to load preferences from your cloned dotfiles:
 `defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/git/dotfiles/iterm2"`
 `defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true`
-13. Install Zoom for collaboration:
+12. Install Zoom for collaboration:
 `brew install --cask zoom`
-14. Install Slack for communication:
+13. Install Slack for communication:
 `brew install --cask slack`
-15. Install ProtonVPN for VPN access:
+14. Install ProtonVPN for VPN access:
 `brew install --cask protonvpn`
-16. Install Claude Code CLI for AI-assisted terminal software engineering:
+15. Install Claude Code CLI for AI-assisted terminal software engineering:
 `brew install --cask claude-code`
-17. Install Cursor CLI for AI-assisted editor workflows:
+16. Install Cursor CLI for AI-assisted editor workflows:
 `brew install --cask cursor-cli`
-18. Install Grok Build CLI for AI-assisted software engineering:
+17. Install Grok Build CLI for AI-assisted software engineering:
 `brew install --cask grok-build`
-19. Install Antigravity CLI for AI-assisted terminal software engineering:
+18. Install Antigravity CLI for AI-assisted terminal software engineering:
 `brew install --cask antigravity-cli`
