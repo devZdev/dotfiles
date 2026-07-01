@@ -133,3 +133,6 @@ fpath=(/Users/devzdev/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+# hmm
+export PATH="/Users/devzdev/.local/bin:$PATH"

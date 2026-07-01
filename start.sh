@@ -26,6 +26,7 @@ brew install tree-sitter-cli
 brew install nvm
 brew install --cask docker-desktop
 brew install --cask google-chrome
+brew install --cask superset
 brew install --cask iterm2
 brew install --cask zoom
 brew install --cask slack

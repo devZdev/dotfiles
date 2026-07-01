@@ -71,22 +71,24 @@ Host github.com
 `gcloud config set project air-scraper-0317`
 9. Install Google Chrome for development:
 `brew install --cask google-chrome`
-10. Install iTerm2 via Homebrew Cask:
+10. Install Superset via Homebrew Cask:
+`brew install --cask superset`
+11. Install iTerm2 via Homebrew Cask:
 `brew install --cask iterm2`
-11. Configure iTerm2 to load preferences from your cloned dotfiles:
+12. Configure iTerm2 to load preferences from your cloned dotfiles:
 `defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/git/dotfiles/iterm2"`
 `defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true`
-12. Install Zoom for collaboration:
+13. Install Zoom for collaboration:
 `brew install --cask zoom`
-13. Install Slack for communication:
+14. Install Slack for communication:
 `brew install --cask slack`
-14. Install ProtonVPN for VPN access:
+15. Install ProtonVPN for VPN access:
 `brew install --cask protonvpn`
-15. Install Claude Code CLI for AI-assisted terminal software engineering:
+16. Install Claude Code CLI for AI-assisted terminal software engineering:
 `brew install --cask claude-code`
-16. Install Cursor CLI for AI-assisted editor workflows:
+17. Install Cursor CLI for AI-assisted editor workflows:
 `brew install --cask cursor-cli`
-17. Install Grok Build CLI for AI-assisted software engineering:
+18. Install Grok Build CLI for AI-assisted software engineering:
 `brew install --cask grok-build`
-18. Install Antigravity CLI for AI-assisted terminal software engineering:
+19. Install Antigravity CLI for AI-assisted terminal software engineering:
 `brew install --cask antigravity-cli`
