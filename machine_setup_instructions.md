@@ -92,3 +92,12 @@ Host github.com
 `brew install --cask grok-build`
 19. Install Antigravity CLI for AI-assisted terminal software engineering:
 `brew install --cask antigravity-cli`
+20. Install Jekyll and its prerequisites (Ruby, chruby, ruby-install):
+    * Install chruby and ruby-install via Homebrew:
+      `brew install chruby ruby-install`
+    * Install a modern Ruby version:
+      `ruby-install ruby 3.4.1`
+    * Add Ruby configuration to your `.zshrc` (automatically handled by cloning this dotfiles repo).
+    * Install Bundler and Jekyll gems:
+      `gem install bundler jekyll`
+

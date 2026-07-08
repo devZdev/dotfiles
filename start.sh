@@ -36,6 +36,8 @@ brew install --cask claude-code
 brew install --cask cursor-cli
 brew install --cask grok-build
 brew install --cask antigravity-cli
+brew install chruby
+brew install ruby-install
 
 # 3. Setup Oh My Zsh & Plugins
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -110,7 +112,28 @@ nvm install --lts
 echo "Installing global NPM packages..."
 npm install -g vscode-langservers-extracted @openai/codex
 
-# 8. GCloud Configuration
+# 8. Ruby Environment & Jekyll
+echo "Configuring Ruby and Jekyll..."
+if [ ! -d "$HOME/.rubies/ruby-3.4.1" ]; then
+    echo "Installing Ruby 3.4.1 (this may take a few minutes)..."
+    ruby-install ruby 3.4.1
+fi
+
+# Load chruby configuration to install Jekyll
+if [ -f "/opt/homebrew/opt/chruby/share/chruby/chruby.sh" ]; then
+    source "/opt/homebrew/opt/chruby/share/chruby/chruby.sh"
+    source "/opt/homebrew/opt/chruby/share/chruby/auto.sh"
+    chruby ruby-3.4.1
+elif [ -f "/usr/local/opt/chruby/share/chruby/chruby.sh" ]; then
+    source "/usr/local/opt/chruby/share/chruby/chruby.sh"
+    source "/usr/local/opt/chruby/share/chruby/auto.sh"
+    chruby ruby-3.4.1
+fi
+
+echo "Installing Bundler and Jekyll gems..."
+gem install bundler jekyll
+
+# 9. GCloud Configuration
 echo "Configuring GCloud Project..."
 gcloud config set project air-scraper-0317
 
