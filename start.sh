@@ -38,6 +38,8 @@ brew install --cask grok-build
 brew install --cask antigravity-cli
 brew install chruby
 brew install ruby-install
+brew tap shopify/shopify
+brew install shopify-cli
 
 # 3. Setup Oh My Zsh & Plugins
 if [ ! -d "$HOME/.oh-my-zsh" ]; then

@@ -100,4 +100,8 @@ Host github.com
     * Add Ruby configuration to your `.zshrc` (automatically handled by cloning this dotfiles repo).
     * Install Bundler and Jekyll gems:
       `gem install bundler jekyll`
-
+21. Install Shopify CLI:
+    * Tap the Shopify repository:
+      `brew tap shopify/shopify`
+    * Install Shopify CLI:
+      `brew install shopify-cli`
