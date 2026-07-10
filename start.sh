@@ -30,6 +30,7 @@ brew install --cask superset
 brew install --cask iterm2
 brew install --cask zoom
 brew install --cask slack
+brew install --cask logitune
 brew install --cask protonvpn
 brew install --cask gcloud-cli
 brew install --cask claude-code

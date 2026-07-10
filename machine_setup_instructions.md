@@ -82,17 +82,19 @@ Host github.com
 `brew install --cask zoom`
 14. Install Slack for communication:
 `brew install --cask slack`
-15. Install ProtonVPN for VPN access:
+15. Install Logi Tune for Logitech device management:
+`brew install --cask logitune`
+16. Install ProtonVPN for VPN access:
 `brew install --cask protonvpn`
-16. Install Claude Code CLI for AI-assisted terminal software engineering:
+17. Install Claude Code CLI for AI-assisted terminal software engineering:
 `brew install --cask claude-code`
-17. Install Cursor CLI for AI-assisted editor workflows:
+18. Install Cursor CLI for AI-assisted editor workflows:
 `brew install --cask cursor-cli`
-18. Install Grok Build CLI for AI-assisted software engineering:
+19. Install Grok Build CLI for AI-assisted software engineering:
 `brew install --cask grok-build`
-19. Install Antigravity CLI for AI-assisted terminal software engineering:
+20. Install Antigravity CLI for AI-assisted terminal software engineering:
 `brew install --cask antigravity-cli`
-20. Install Jekyll and its prerequisites (Ruby, chruby, ruby-install):
+21. Install Jekyll and its prerequisites (Ruby, chruby, ruby-install):
     * Install chruby and ruby-install via Homebrew:
       `brew install chruby ruby-install`
     * Install a modern Ruby version:
