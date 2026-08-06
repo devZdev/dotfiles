@@ -71,30 +71,34 @@ Host github.com
 `gcloud config set project air-scraper-0317`
 9. Install Google Chrome for development:
 `brew install --cask google-chrome`
-10. Install Superset via Homebrew Cask:
+10. Install the ChatGPT macOS app:
+`brew install --cask chatgpt`
+11. Install TradingView Desktop:
+`brew install --cask tradingview`
+12. Install Superset via Homebrew Cask:
 `brew install --cask superset`
-11. Install iTerm2 via Homebrew Cask:
+13. Install iTerm2 via Homebrew Cask:
 `brew install --cask iterm2`
-12. Configure iTerm2 to load preferences from your cloned dotfiles:
+14. Configure iTerm2 to load preferences from your cloned dotfiles:
 `defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/git/dotfiles/iterm2"`
 `defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true`
-13. Install Zoom for collaboration:
+15. Install Zoom for collaboration:
 `brew install --cask zoom`
-14. Install Slack for communication:
+16. Install Slack for communication:
 `brew install --cask slack`
-15. Install Logi Tune for Logitech device management:
+17. Install Logi Tune for Logitech device management:
 `brew install --cask logitune`
-16. Install ProtonVPN for VPN access:
+18. Install ProtonVPN for VPN access:
 `brew install --cask protonvpn`
-17. Install Claude Code CLI for AI-assisted terminal software engineering:
+19. Install Claude Code CLI for AI-assisted terminal software engineering:
 `brew install --cask claude-code`
-18. Install Cursor CLI for AI-assisted editor workflows:
+20. Install Cursor CLI for AI-assisted editor workflows:
 `brew install --cask cursor-cli`
-19. Install Grok Build CLI for AI-assisted software engineering:
+21. Install Grok Build CLI for AI-assisted software engineering:
 `brew install --cask grok-build`
-20. Install Antigravity CLI for AI-assisted terminal software engineering:
+22. Install Antigravity CLI for AI-assisted terminal software engineering:
 `brew install --cask antigravity-cli`
-21. Install Jekyll and its prerequisites (Ruby, chruby, ruby-install):
+23. Install Jekyll and its prerequisites (Ruby, chruby, ruby-install):
     * Install chruby and ruby-install via Homebrew:
       `brew install chruby ruby-install`
     * Install a modern Ruby version:
@@ -102,7 +106,7 @@ Host github.com
     * Add Ruby configuration to your `.zshrc` (automatically handled by cloning this dotfiles repo).
     * Install Bundler and Jekyll gems:
       `gem install bundler jekyll`
-21. Install Shopify CLI:
+24. Install Shopify CLI:
     * Tap the Shopify repository:
       `brew tap shopify/shopify`
     * Install Shopify CLI:
