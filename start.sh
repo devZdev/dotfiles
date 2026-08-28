@@ -28,6 +28,8 @@ brew install --cask docker-desktop
 brew install --cask google-chrome
 brew install --cask chatgpt
 brew install --cask tradingview
+brew install superset-sh/tap/superset
+brew link superset-sh/tap/superset
 brew install --cask superset
 brew install --cask iterm2
 brew install --cask zoom
@@ -153,4 +155,5 @@ echo "5. Set up your OpenAI / Codex authentication (run: codex to sign in)."
 echo "6. Set up your Claude Code authentication (run: claude to sign in)."
 echo "7. Set up your Grok Build authentication (run: grok-build auth login)."
 echo "8. Set up your Antigravity CLI authentication (run: agy to sign in)."
+echo "9. Set up your Superset CLI authentication (run: superset auth login)."
 echo "===================================================================="
