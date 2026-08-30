@@ -100,9 +100,11 @@ Host github.com
 `brew install --cask cursor-cli`
 22. Install Grok Build CLI for AI-assisted software engineering:
 `brew install --cask grok-build`
-23. Install Antigravity CLI for AI-assisted terminal software engineering:
+23. Install the Grok Bot desktop app, open it, and sign in with Cursor:
+`brew install --cask grok-bot`
+24. Install Antigravity CLI for AI-assisted terminal software engineering:
 `brew install --cask antigravity-cli`
-24. Install Jekyll and its prerequisites (Ruby, chruby, ruby-install):
+25. Install Jekyll and its prerequisites (Ruby, chruby, ruby-install):
     * Install chruby and ruby-install via Homebrew:
       `brew install chruby ruby-install`
     * Install a modern Ruby version:
@@ -110,7 +112,7 @@ Host github.com
     * Add Ruby configuration to your `.zshrc` (automatically handled by cloning this dotfiles repo).
     * Install Bundler and Jekyll gems:
       `gem install bundler jekyll`
-25. Install Shopify CLI:
+26. Install Shopify CLI:
     * Tap the Shopify repository:
       `brew tap shopify/shopify`
     * Install Shopify CLI:
