@@ -28,6 +28,7 @@ brew install --cask docker-desktop
 brew install --cask google-chrome
 brew install --cask chatgpt
 brew install --cask tradingview
+brew install --cask fidelity-trader+
 brew install superset-sh/tap/superset
 brew link superset-sh/tap/superset
 brew install --cask superset
@@ -158,4 +159,5 @@ echo "7. Set up your Grok Build authentication (run: grok-build auth login)."
 echo "8. Open Grok Bot and choose 'Get started' to sign in with Cursor."
 echo "9. Set up your Antigravity CLI authentication (run: agy to sign in)."
 echo "10. Set up your Superset CLI authentication (run: superset auth login)."
+echo "11. Open Fidelity Trader+ and sign in with your Fidelity credentials."
 echo "===================================================================="
