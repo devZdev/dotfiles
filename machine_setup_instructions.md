@@ -77,36 +77,38 @@ Host github.com
 `brew install --cask tradingview`
 12. Install Fidelity Trader+ Desktop and sign in with your Fidelity credentials:
 `brew install --cask fidelity-trader+`
-13. Install the Superset CLI:
+13. Install Ledger Wallet (formerly Ledger Live), open it, and complete the initial setup:
+`brew install --cask ledger-wallet`
+14. Install the Superset CLI:
 `brew install superset-sh/tap/superset`
 `brew link superset-sh/tap/superset`
-14. Install Superset via Homebrew Cask and authenticate the CLI:
+15. Install Superset via Homebrew Cask and authenticate the CLI:
 `brew install --cask superset`
 `superset auth login`
-15. Install iTerm2 via Homebrew Cask:
+16. Install iTerm2 via Homebrew Cask:
 `brew install --cask iterm2`
-16. Configure iTerm2 to load preferences from your cloned dotfiles:
+17. Configure iTerm2 to load preferences from your cloned dotfiles:
 `defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/git/dotfiles/iterm2"`
 `defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true`
-17. Install Zoom for collaboration:
+18. Install Zoom for collaboration:
 `brew install --cask zoom`
-18. Install Slack for communication:
+19. Install Slack for communication:
 `brew install --cask slack`
-19. Install Logi Tune for Logitech device management:
+20. Install Logi Tune for Logitech device management:
 `brew install --cask logitune`
-20. Install ProtonVPN for VPN access:
+21. Install ProtonVPN for VPN access:
 `brew install --cask protonvpn`
-21. Install Claude Code CLI for AI-assisted terminal software engineering:
+22. Install Claude Code CLI for AI-assisted terminal software engineering:
 `brew install --cask claude-code`
-22. Install Cursor CLI for AI-assisted editor workflows:
+23. Install Cursor CLI for AI-assisted editor workflows:
 `brew install --cask cursor-cli`
-23. Install Grok Build CLI for AI-assisted software engineering:
+24. Install Grok Build CLI for AI-assisted software engineering:
 `brew install --cask grok-build`
-24. Install the Grok Bot desktop app, open it, and sign in with Cursor:
+25. Install the Grok Bot desktop app, open it, and sign in with Cursor:
 `brew install --cask grok-bot`
-25. Install Antigravity CLI for AI-assisted terminal software engineering:
+26. Install Antigravity CLI for AI-assisted terminal software engineering:
 `brew install --cask antigravity-cli`
-26. Install Jekyll and its prerequisites (Ruby, chruby, ruby-install):
+27. Install Jekyll and its prerequisites (Ruby, chruby, ruby-install):
     * Install chruby and ruby-install via Homebrew:
       `brew install chruby ruby-install`
     * Install a modern Ruby version:
@@ -114,7 +116,7 @@ Host github.com
     * Add Ruby configuration to your `.zshrc` (automatically handled by cloning this dotfiles repo).
     * Install Bundler and Jekyll gems:
       `gem install bundler jekyll`
-27. Install Shopify CLI:
+28. Install Shopify CLI:
     * Tap the Shopify repository:
       `brew tap shopify/shopify`
     * Install Shopify CLI:
