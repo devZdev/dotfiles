@@ -100,15 +100,17 @@ Host github.com
 `brew install --cask protonvpn`
 22. Install Claude Code CLI for AI-assisted terminal software engineering:
 `brew install --cask claude-code`
-23. Install Cursor CLI for AI-assisted editor workflows:
+23. Install the Anthropic `ant` CLI:
+`brew install anthropics/tap/ant`
+24. Install Cursor CLI for AI-assisted editor workflows:
 `brew install --cask cursor-cli`
-24. Install Grok Build CLI for AI-assisted software engineering:
+25. Install Grok Build CLI for AI-assisted software engineering:
 `brew install --cask grok-build`
-25. Install the Grok Bot desktop app, open it, and sign in with Cursor:
+26. Install the Grok Bot desktop app, open it, and sign in with Cursor:
 `brew install --cask grok-bot`
-26. Install Antigravity CLI for AI-assisted terminal software engineering:
+27. Install Antigravity CLI for AI-assisted terminal software engineering:
 `brew install --cask antigravity-cli`
-27. Install Jekyll and its prerequisites (Ruby, chruby, ruby-install):
+28. Install Jekyll and its prerequisites (Ruby, chruby, ruby-install):
     * Install chruby and ruby-install via Homebrew:
       `brew install chruby ruby-install`
     * Install a modern Ruby version:
@@ -116,7 +118,7 @@ Host github.com
     * Add Ruby configuration to your `.zshrc` (automatically handled by cloning this dotfiles repo).
     * Install Bundler and Jekyll gems:
       `gem install bundler jekyll`
-28. Install Shopify CLI:
+29. Install Shopify CLI:
     * Tap the Shopify repository:
       `brew tap shopify/shopify`
     * Install Shopify CLI:

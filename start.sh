@@ -40,6 +40,7 @@ brew install --cask logitune
 brew install --cask protonvpn
 brew install --cask gcloud-cli
 brew install --cask claude-code
+brew install anthropics/tap/ant
 brew install --cask cursor-cli
 brew install --cask grok-build
 brew install --cask grok-bot
