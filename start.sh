@@ -28,6 +28,10 @@ brew install --cask docker-desktop
 brew install --cask google-chrome
 brew install --cask chatgpt
 brew install --cask tradingview
+if ! bash "$(dirname "$0")/install-tastytrade-desktop-2.sh"; then
+    echo "tastytrade Desktop 2.0 installation failed; stopping setup." >&2
+    exit 1
+fi
 brew install --cask fidelity-trader+
 brew install --cask ledger-wallet
 brew install superset-sh/tap/superset
@@ -163,4 +167,5 @@ echo "9. Set up your Antigravity CLI authentication (run: agy to sign in)."
 echo "10. Set up your Superset CLI authentication (run: superset auth login)."
 echo "11. Open Fidelity Trader+ and sign in with your Fidelity credentials."
 echo "12. Open Ledger Wallet (formerly Ledger Live) and complete the initial setup."
+echo "13. Open tastytrade 2.0 and sign in."
 echo "===================================================================="
