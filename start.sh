@@ -45,8 +45,7 @@ brew install --cask protonvpn
 brew install --cask gcloud-cli
 brew install --cask claude-code
 brew install anthropics/tap/ant
-brew install --cask cursor-cli
-brew install --cask grok-build
+curl https://cursor.com/install -fsS | bash
 brew install --cask grok-bot
 brew install --cask antigravity-cli
 brew install chruby
@@ -161,7 +160,7 @@ echo "3. Log into Docker Desktop as 'devzdev'."
 echo "4. Authenticate gcloud (run: gcloud auth login)."
 echo "5. Set up your OpenAI / Codex authentication (run: codex to sign in)."
 echo "6. Set up your Claude Code authentication (run: claude to sign in)."
-echo "7. Set up your Grok Build authentication (run: grok-build auth login)."
+echo "7. Set up your Cursor Agent authentication (run: cursor-agent login)."
 echo "8. Open Grok Bot and choose 'Get started' to sign in with Cursor."
 echo "9. Set up your Antigravity CLI authentication (run: agy to sign in)."
 echo "10. Set up your Superset CLI authentication (run: superset auth login)."
